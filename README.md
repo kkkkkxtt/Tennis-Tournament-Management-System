@@ -56,13 +56,17 @@ This program utilized static array with circular queue to handle the tournament 
    ./bin/ttms
    ```
 
+---
+
 ##  Example Output:
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b61fc8f4-bf65-4e54-8ed2-3463c2467917" width="30%">
 </div>
 
-## Output Format
+---
+
+## Output File Format
 
 ### Match.txt
 <div align="center">
