@@ -114,7 +114,7 @@ void TournamentQueue::writeMatch(const Match& match)
         
         // Find player names from their IDs by searching through all possible players
         // This requires checking the player.txt file
-        ifstream playerFile("player.txt");
+        ifstream playerFile("data/player.txt");
         if (playerFile.is_open()) {
             string line;
             while (getline(playerFile, line)) {
@@ -155,14 +155,14 @@ void TournamentQueue::writeMatch(const Match& match)
 void TournamentQueue::checkMatchFileExisting()
 {
     // Check if file exists using ifstream
-    std::ifstream fileCheck("match.txt");
+    std::ifstream fileCheck("data/match.txt");
 
     if (fileCheck.good()) {
         // File exists, close the ifstream before deleting
         fileCheck.close();
 
         // Delete the existing file
-        if (std::remove("match.txt") != 0) {
+        if (std::remove("data/match.txt") != 0) {
             // Handle error if deletion fails
             std::cerr << "Error deleting existing match.txt file" << std::endl;
             return;
@@ -170,7 +170,7 @@ void TournamentQueue::checkMatchFileExisting()
     }
 
     // Create a new empty file
-    std::ofstream newFile("match.txt");
+    std::ofstream newFile("data/match.txt");
     if (!newFile.is_open()) {
         // Handle error if file creation fails
         std::cerr << "Error creating new match.txt file" << std::endl;
