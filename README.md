@@ -46,9 +46,14 @@ This program utilized static array with circular queue to handle the tournament 
    cd Tennis-Tournament-Management-System
    ```
 
+2. Create ```bin/``` directory
+   ```bash
+   mkdir bin
+   ```
+
 2. Compile the program:
    ```bash
-   g++ src/*.cpp -o bin/ttms
+   g++ src/*.cpp -o bin/ttms -I include
    ```
 
 3. Run the program:
