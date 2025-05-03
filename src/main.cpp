@@ -22,7 +22,7 @@ int main()
     // Initialize tournament with 12 players
     TournamentQueue tournament("Qualifiers", 12);
     // Load players from file
-    tournament.readPlayer("player.txt");
+    tournament.readPlayer("data/player.txt");
     tournament.checkMatchFileExisting();
 
     cout << "--Tennis Tournament Management System--" << endl;
