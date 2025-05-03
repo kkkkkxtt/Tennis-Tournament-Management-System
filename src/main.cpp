@@ -25,7 +25,7 @@ int main()
     tournament.readPlayer("player.txt");
     tournament.checkMatchFileExisting();
 
-    cout << "--Tennis Championship Management System--" << endl;
+    cout << "--Tennis Tournament Management System--" << endl;
 
     // Run tournament stages
     //Qualifier 12 players -> 6 players
